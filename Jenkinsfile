@@ -23,3 +23,11 @@ pipeline {
         }
     }
 }
+post {
+    success {
+        bat 'echo "Build succesful"'
+    }
+    failure {
+        bat 'echo "Build failed"'
+    }
+}
