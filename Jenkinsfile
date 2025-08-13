@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/KrutarthSompura/test_repo'
+                git branch: 'main', url: 'https://github.com/KrutarthSompura/test_repo'
             }
         }
         stage('Build') {
