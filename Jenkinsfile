@@ -22,12 +22,12 @@ pipeline {
             }
         }
     }
-}
-post {
-    success {
-        bat 'echo "Build succesful"'
-    }
-    failure {
-        bat 'echo "Build failed"'
+    post {
+        success {
+            echo 'Build successful!'
+        }
+        failure {
+            echo 'Build failed!'
+        }
     }
 }
