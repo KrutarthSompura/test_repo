@@ -3,7 +3,7 @@ pipeline {
     stages{
         satge('Checkout Code'){
             steps{
-                git https://github.com/KrutarthSompura/test_repo
+                git 'https://github.com/KrutarthSompura/test_repo'
             }
         }
         stage('Build'){
