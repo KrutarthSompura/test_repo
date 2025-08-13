@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-        satge('Checkout Code'){
+        stage('Checkout Code'){
             steps{
                 git 'https://github.com/KrutarthSompura/test_repo'
             }
